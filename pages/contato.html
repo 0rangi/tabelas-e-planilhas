@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
     <link href="../css/estilo.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header>
+
+        <h1>CEFET-MG Campus Varginha - Curso Técnico</h1>
+
+        <nav class="nave">
+            <ul>
+                <li> <a href="../index.html">Início</a> </li>
+                <li> <a href="./curso.html">Curso</a> </li>
+                <li> <a href="./faq.html">FAQ</a> </li>
+                <li> <a href="./contato.html">Contato</a> </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <form acton="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><b>Contato</b></legend>
+
+<label>
+              Nome:  <input type="text" name="nome" placeholder="'João'"><br />
+            </label>
+            <label>
+              E-mail:  <input type="email" name="email" placeholder="nome@email"><br />
+            </label>
+
+
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="masc" value="masc">
+
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="fem" value="fem"> <br />
+
+<label for="est">Estado/Cidade</label>
+<select>
+    <option value=""></option>
+    <option value="MG">Minas Gerais</option>
+    <option value="RJ">Rio de Janeiro</option>
+</select>
+<input type="text" name="cid" placeholder="'Varginha'"><br />
+
+<input type="file" name="file"><br />
+
+<label for="suges">Sugestão <br/> </label>
+<textarea id="suges" name="suges"></textarea> <br/>
+
+
+
+
+
+
+<button type="submit" >enviar </button>
+<button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
